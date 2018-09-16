@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>[B19] Disasters: Tornado</name>
+    <author>Pyrce</author>
+    <url>https://github.com/MSeal/RimworldDisasterTornado</url>
+    <targetVersion>0.19.2009</targetVersion>
+    <description>[h1][B19] Disasters: Tornado[/h1]
+Crop-ripping, geothermal-lifting, loot-destroying winds can soon visit your quaint fishing village.
+
+[h1]Changes[/h1]
+- Brings back tornados
+- Disaster options in Mod Settings
+
+
+[h1]Description[/h1]
+
+Adds B18 tornadoes back for those that enjoyed the natual disaster. This doesn't modify the behavior of tornadoes in anyway -- the tornado generator and the mod use the same tornado class.
+
+For a more silly version of tornadoes take a look at [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1502928982]Sharknado[/url].
+
+
+[h1]Required Mods[/h1]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=818773962]Hugs Lib[/url]
+
+
+[h1]Compatibility[/h1]
+Should be compatible with just about everything.
+
+- Works with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1502928982]Sharknado[/url] if you want both ¯\_(ツ)_/¯
+
+
+[h1]Current (Sometimes Crude) Translations[/h1]
+Based on what was there in B18 (coverage varies) with a couple fixes
+- English
+- Catalan
+- French
+- Italian
+- German
+- Japanese
+- Korean
+- Chinese (Simplified)
+- Hungarian
+- Russian
+- Spanish
+
+Link me translation fixes/additions and I'll add them in.
+    </description>
+</ModMetaData>

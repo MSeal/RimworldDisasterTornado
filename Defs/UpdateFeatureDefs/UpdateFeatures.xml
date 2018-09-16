@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <HugsLib.UpdateFeatureDef Abstract="true" Name="UpdateFeatureBase">
+    <modNameReadable>Disasters: Tornado</modNameReadable>
+    <modIdentifier>DisastersTornado</modIdentifier>
+    <linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1514853860</linkUrl>
+  </HugsLib.UpdateFeatureDef>
+</Defs>
