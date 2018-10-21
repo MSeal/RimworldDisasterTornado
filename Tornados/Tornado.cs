@@ -2,11 +2,43 @@
 using System.Collections.Generic;
 using RimWorld;
 using Verse;
+using UnityEngine;
 using HugsLib;
 using HugsLib.Settings;
+using Harmony;
+using System.Reflection;
 
 namespace Disasters
 {
+    [StaticConstructorOnStartup]
+    public static class TornadoHarmonyLoader {
+        static TornadoHarmonyLoader()
+        {
+            var harmony = HarmonyInstance.Create("net.mseal.rimworld.mod.tornado");
+            harmony.PatchAll(Assembly.GetExecutingAssembly());
+        }
+    }
+
+    [HarmonyPatch(typeof(Tornado), "Tick")]
+    internal static class Map_FinalizeInit_Patch {
+        private static void Postfix(Tornado __instance, ref int ___leftFadeOutTicks, Vector2 ___realPosition)
+        {
+            if (__instance.Spawned && ___leftFadeOutTicks <= 0)
+            {
+                IntVec3 intVec = new Vector3(___realPosition.x, 0f, ___realPosition.y).ToIntVec3();
+                if (intVec.InBounds(__instance.Map))
+                {
+                    RoofDef roofDef = __instance.Map.roofGrid.RoofAt(intVec);
+                    if (roofDef != null && roofDef.isThickRoof)
+                    {
+                        ___leftFadeOutTicks = 120;
+                        Messages.Message("MessageTornadoDissipated".Translate(), new TargetInfo(__instance.Position, __instance.Map, false), MessageTypeDefOf.PositiveEvent, true);
+                    }
+                }
+            }
+        }
+    }
+
     public class TornadoLoader : ModBase
     {
         const float DEFAULT_BASE_CHANCE = 0.25F;
@@ -143,6 +175,12 @@ namespace Disasters
                 if (c2.InBounds(map))
                 {
                     if (this.AnyPawnOfPlayerFactionAt(c2, map))
+                    {
+                        return false;
+                    }
+                    // Added to eliminate spawning inside areas that will immediate despawn
+                    RoofDef roofDef = map.roofGrid.RoofAt(c2);
+                    if (roofDef != null && roofDef.isThickRoof)
                     {
                         return false;
                     }

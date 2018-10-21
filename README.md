@@ -1,6 +1,6 @@
 # RimworldDisasterTornado
 
-![Version](https://img.shields.io/badge/Rimworld-B19-brightgreen.svg) on [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1514853860)
+![Version](https://img.shields.io/badge/Rimworld-1.0-brightgreen.svg) on [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1545113711)
 
 ![Alt text](About/Preview.png?raw=true "Disasters: Tornado")
 
@@ -8,11 +8,12 @@ Adds tornados back to RimWorld. Crop-ripping, geothermal-lifting, loot-destroyin
 
 ## Changes
 - Brings back tornados
+- Makes tornados dissipate when over thick roofs (mountain tiles)
 - Disaster options in Mod Settings
 
 ## Description
 
-Adds B18 tornadoes back for those that enjoyed the natual disaster. This doesn't modify the behavior of tornadoes in anyway -- the tornado generator and the mod use the same tornado class.
+Adds B18 tornadoes back for those that enjoyed the natual disaster. This doesn't modify the behavior of tornadoes except to make them unable to sustain above mountain roofs. The tornado generator and the mod use the same tornado class.
 
 For a more silly version of tornadoes take a look at [Sharknado](https://github.com/MSeal/RimworldSharknado).
 
@@ -29,15 +30,19 @@ Should be compatible with just about everything.
 Based on what was there in B18 (coverage varies) with a couple fixes
 
 - English
-- Catalan
-- French
-- Italian
-- German
-- Japanese
-- Korean
-- Chinese (Simplified)
-- Hungarian
-- Russian
-- Spanish
+- Catalana
+- Française
+- Italiana
+- Deutsche
+- 中文
+- 한국어
+- 日本語
+- Magyar
+- Pусский
+- Español
 
 Link me translation fixes/additions and I'll add them in.
+
+## Credits:
+
+[Powered by Harmony Patch Library](https://github.com/pardeike/Harmony)

@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>[B19] Disasters: Tornado</name>
+    <name>[1.0] Disasters: Tornado</name>
     <author>Pyrce</author>
     <url>https://github.com/MSeal/RimworldDisasterTornado</url>
-    <targetVersion>0.19.2009</targetVersion>
-    <description>[h1][B19] Disasters: Tornado[/h1]
+    <targetVersion>1.0.2059</targetVersion>
+    <description>[h1][1.0] Disasters: Tornado[/h1]
 Crop-ripping, geothermal-lifting, loot-destroying winds can soon visit your quaint fishing village.
 
 [h1]Changes[/h1]
 - Brings back tornados
+- Makes tornados dissipate when over thick roofs (mountain tiles)
 - Disaster options in Mod Settings
 
 
 [h1]Description[/h1]
 
-Adds B18 tornadoes back for those that enjoyed the natual disaster. This doesn't modify the behavior of tornadoes in anyway -- the tornado generator and the mod use the same tornado class.
+Adds B18 tornadoes back for those that enjoyed the natual disaster. This doesn't modify the behavior of tornadoes except to make them unable to sustain above mountain roofs. The tornado generator and the mod use the same tornado class.
 
 For a more silly version of tornadoes take a look at [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1502928982]Sharknado[/url].
 
@@ -32,17 +33,22 @@ Should be compatible with just about everything.
 [h1]Current (Sometimes Crude) Translations[/h1]
 Based on what was there in B18 (coverage varies) with a couple fixes
 - English
-- Catalan
-- French
-- Italian
-- German
-- Japanese
-- Korean
-- Chinese (Simplified)
-- Hungarian
-- Russian
-- Spanish
+- Catalana
+- Française
+- Italiana
+- Deutsche
+- 中文
+- 한국어
+- 日本語
+- Magyar
+- Pусский
+- Español
+
 
 Link me translation fixes/additions and I'll add them in.
+
+[h1]Credits[/h1]
+
+[url=https://github.com/pardeike/Harmony]Powered by Harmony Patch Library[/url]
     </description>
 </ModMetaData>
