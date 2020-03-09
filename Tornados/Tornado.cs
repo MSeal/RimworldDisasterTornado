@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using RimWorld;
 using Verse;
 using UnityEngine;
+using HarmonyLib;
 using HugsLib;
 using HugsLib.Settings;
-using Harmony;
 using System.Reflection;
 
 namespace Disasters
@@ -14,7 +14,7 @@ namespace Disasters
     public static class TornadoHarmonyLoader {
         static TornadoHarmonyLoader()
         {
-            var harmony = HarmonyInstance.Create("net.mseal.rimworld.mod.tornado");
+            var harmony = new Harmony("net.mseal.rimworld.mod.tornado");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
     }
@@ -147,18 +147,12 @@ namespace Disasters
             return Spawn(loc, map);
         }
 
-        // Extracted from TryExecuteWorker
-        protected virtual void SendLetter(Tornado tornado, Map map)
-        {
-            base.SendStandardLetter(tornado, null, new string[0]);
-        }
-
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             Map map = (Map)parms.target;
             Tornado tornado = TrySpawnOnMap(map);
             if (tornado == null) { return false; }
-            SendLetter(tornado, map);
+            base.SendStandardLetter(parms, tornado);
             return true;
         }
 

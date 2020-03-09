@@ -1,6 +1,6 @@
 # RimworldDisasterTornado
 
-![Version](https://img.shields.io/badge/Rimworld-1.0-brightgreen.svg) on [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1545113711)
+![Version](https://img.shields.io/badge/Rimworld-1.1-brightgreen.svg) on [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1545113711)
 
 ![Alt text](About/Preview.png?raw=true "Disasters: Tornado")
 
@@ -18,6 +18,7 @@ Adds B18 tornadoes back for those that enjoyed the natual disaster. This doesn't
 For a more silly version of tornadoes take a look at [Sharknado](https://github.com/MSeal/RimworldSharknado).
 
 ## Required Mods
+- Harmony
 - Hugs Lib
 
 ## Compatibility
@@ -42,7 +43,3 @@ Based on what was there in B18 (coverage varies) with a couple fixes
 - Español
 
 Link me translation fixes/additions and I'll add them in.
-
-## Credits:
-
-[Powered by Harmony Patch Library](https://github.com/pardeike/Harmony)
