@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>Disasters: Tornado</name>
-    <author>Pyrce</author>
-    <packageId>pyrce.disasters.tornado</packageId>
-    <url>https://github.com/MSeal/RimworldDisasterTornado</url>
-    <supportedVersions>
-      <li>1.0</li>
-      <li>1.1</li>
-    </supportedVersions>
-    <modDependencies>
-      <li>
-        <displayName>HugsLib</displayName>
-        <packageId>UnlimitedHugs.HugsLib</packageId>
-        <steamWorkshopUrl>steam://url/CommunityFilePage/818773962</steamWorkshopUrl>
-      </li>
-    </modDependencies>
+  <name>Disasters: Tornado</name>
+  <author>Pyrce</author>
+  <packageId>pyrce.disasters.tornado</packageId>
+  <url>https://github.com/MSeal/RimworldDisasterTornado</url>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <displayName>HugsLib</displayName>
+      <packageId>UnlimitedHugs.HugsLib</packageId>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/818773962</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>UnlimitedHugs.HugsLib</li>
+  </loadAfter>
   <description>
       [h1]Disasters: Tornado[/h1]
       Crop-ripping, geothermal-lifting, loot-destroying winds can soon visit your quaint fishing village.
