@@ -84,7 +84,7 @@ namespace Disasters
                 "Tornado.BaseChanceDescription".Translate(),
                 DEFAULT_BASE_CHANCE,
                 FloatNonNegativeValidator());
-            baseChanceHandler.OnValueChanged = newValue => { ApplySettings(); };
+            baseChanceHandler.ValueChanged += newValue => { ApplySettings(); };
 
             minRefireDaysHandler = Settings.GetHandle<int>(
                 "minRefireDays",
@@ -92,7 +92,7 @@ namespace Disasters
                 "Tornado.MinRefireDescription".Translate(),
                 DEFAULT_MIN_REFIRE,
                 IntNonNegativeValidator());
-            minRefireDaysHandler.OnValueChanged = newValue => { ApplySettings(); };
+            minRefireDaysHandler.ValueChanged += newValue => { ApplySettings(); };
         }
 
         public void ApplySettings()
